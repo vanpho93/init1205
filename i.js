@@ -25,3 +25,16 @@ function inSoChinhPhuong() {
         if (dk) console.log(i);
     }
 }
+
+function inSo(fn) {
+    for(let i = 0; i <= 100; i++) {
+        const dk = fn(i);
+        if (dk) console.log(i);
+    }
+}
+
+inSo(x => x % 2 === 0);
+// inSo(function(x){ return x % 2 === 1 });
+// inSo(function(x){ return x % 3 === 1 });
+// inSo(function(x){ return Math.sqrt(x) % 1 === 0 });
+// inSo(function(x){ return (x - 1) % 3 === 0 && (x + 1) % 4 === 0 });
